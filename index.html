@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SyN Security</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baumans&family=Jersey+15&family=Oxanium:wght@200..800&display=swap" rel="stylesheet"><!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* Estilos personalizados */
+     .btn-primary {
+        background-color: #033F6A; 
+        border-color: #033F6A;    
+    }
+
+
+        body {
+            font-family: "Baumans", system-ui;
+             font-weight: 400;
+             font-style: normal;
+        }
+        .banner-top .overlay {
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        .nav-link {
+         color: #000000; 
+        }
+        .nav-link:hover {
+        color: #033F6A; /* Color al pasar el cursor */
+        }
+
+
+        .navbar-brand img {
+            transition: transform 0.3s;
+        }
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+        .hero-section {
+            background: url(/banner.jpeg) center/cover no-repeat;
+            height: 70vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: all 0.3s;
+        }
+        footer {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="/logo.png" alt="S&N Security Logo" width="150" height="60" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Quién Soy?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portafolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center d-flex align-items-center" id="home">
+        <div class="container">
+            <h1>Bienvenidos a SyN Security</h1>
+            <p class="lead">Innovando en seguridad electrónica por más de 15 años.</p>
+            <a href="#about" class="btn btn-primary btn-lg mt-3">Conoce Más</a>
+        </div>
+    </section>
+
+    <!-- Quiénes Somos -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Quiénes Somos</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/500" alt="Equipo de Seguridad" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">
+                        Somos un equipo con más de <strong>15 años de experiencia</strong> en el sector de seguridad. 
+                        Nuestra trayectoria como clientes nos dio un entendimiento profundo de las necesidades reales del mercado. 
+                        Ante la falta de soluciones integrales, decidimos convertirnos en líderes de la <strong>seguridad electrónica</strong>.
+                    </p>
+                    <a href="#values" class="btn btn-outline-primary mt-3">Conoce Nuestros Valores</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuestros Valores -->
+    <section id="values" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Nuestros Valores</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-handshake fa-3x text-primary mb-3"></i>
+                    <h5>Integridad</h5>
+                    <p>Actuamos con ética, transparencia y respeto en todo lo que hacemos.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-check-circle fa-3x text-success mb-3"></i>
+                    <h5>Responsabilidad</h5>
+                    <p>Asumimos nuestros compromisos y trabajamos para superar las expectativas.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-shield-alt fa-3x text-warning mb-3"></i>
+                    <h5>Seguridad</h5>
+                    <p>Ponemos la protección y el bienestar de nuestros clientes como prioridad absoluta.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="fas fa-star fa-3x text-info mb-3"></i>
+                    <h5>Excelencia</h5>
+                    <p>Buscamos siempre la perfección en cada solución.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section id="cta" class="py-5 text-white text-center" style="background: linear-gradient(to right, #033F6A, #6610f2);">
+        <div class="container">
+            <h2 class="mb-3">¿Listo para asegurar tu futuro?</h2>
+            <p class="lead">Descubre cómo nuestras soluciones pueden transformar tu tranquilidad.</p>
+            <a href="#contact" class="btn btn-light btn-lg">Contáctanos Ahora</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 SyN Security. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@synsecurity.com" class="text-white">info@synsecurity.com</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Agregar funcionalidad de desplazamiento suave
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
